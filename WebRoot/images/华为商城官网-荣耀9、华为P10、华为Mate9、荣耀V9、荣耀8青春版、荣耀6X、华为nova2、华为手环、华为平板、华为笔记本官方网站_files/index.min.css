@@ -1,0 +1,831 @@
+.honor .grid-items.current {
+	z-index: 1; box-shadow: none; transform: none; -webkit-transform: none; -o-transform: none; -webkit-box-shadow: none; -moz-box-shadow: none; -moz-transform: none;
+}
+.channel-floor-honor-shadow {
+	background: rgb(255, 255, 255); border-radius: 5px; box-shadow: 0px 0px 15px 6px rgba(44,101,186,0.15); -webkit-box-shadow: 0 0 15px 6px rgba(44, 101, 186, 0.15); -moz-box-shadow: 0 0 15px 6px rgba(44, 101, 186, 0.15); -webkit-border-radius: 5px; -moz-border-radius: 5px;
+}
+.honor-channel-floor {
+	padding: 0px 20px 18px;
+}
+.honor-channel-floor .h h2 {
+	padding-left: 22px; position: relative;
+}
+.honor-channel-floor .channel-nav {
+	margin-left: 40px;
+}
+.honor-channel-floor .channel-nav a {
+	font-size: 18px;
+}
+.honor-channel-floor .channel-more a {
+	color: rgb(58, 58, 58); padding-right: 32px; position: relative;
+}
+.honor-channel-floor .channel-more a::after {
+	background: url("../../images/echannel/icon/icon-honor.png") no-repeat; top: 0px; width: 20px; height: 20px; right: 0px; position: absolute; content: "";
+}
+.honor-channel-floor .channel-more a:hover::after {
+	background-position: 0px -20px;
+}
+.honor-channel-floor .channel-more a:hover {
+	color: rgb(0, 181, 226);
+}
+.honor-channel-floor .channel-nav a:hover {
+	color: rgb(29, 178, 227);
+}
+.honor-channel-floor .channel-nav a::after {
+	display: none;
+}
+.honor-channel-floor .h h2 a {
+	transition:0.2s; -webkit-transition: all .2s ease; -moz-transition: all .2s ease; -o-transition: all .2s ease;
+}
+.honor-channel-floor .h h2 a:hover {
+	color: rgb(0, 181, 226);
+}
+.honor-channel-floor .h h2::after {
+	background: rgb(0, 181, 226); border-radius: 3px; left: 0px; top: 2px; width: 8px; height: 34px; position: absolute; content: ""; -webkit-border-radius: 3px; -moz-border-radius: 3px;
+}
+.honor-channel-floor .goods-list .grid-list {
+	margin: 0px; border-radius: 5px; border: 1px solid rgb(221, 221, 221); border-image: none; height: 100%; overflow: hidden; -webkit-border-radius: 5px; -moz-border-radius: 5px;
+}
+.honor-channel-floor .goods-list .grid-items {
+	margin: 0px; border-radius: 5px; width: 25%; height: 378px; -webkit-border-radius: 5px; -moz-border-radius: 5px;
+}
+.honor-channel-floor .goods-list .grid-items::after {
+	background: rgb(221, 221, 221); left: 0px; top: 0px; width: 1px; height: 100%; position: absolute; content: "";
+}
+.honor-channel-floor .goods-list :first-child.grid-items::after {
+	width: 0px;
+}
+.honor-channel-floor .goods-list .grid-items .thumb {
+	transition:0.2s; -webkit-transition: all .2s ease; -moz-transition: all .2s ease; -o-transition: all .2s ease;
+}
+.honor-channel-floor .goods-list .grid-items.current .thumb {
+	box-shadow: inset 0px 0px 35px 2px rgba(44,0,0,0.15); -webkit-box-shadow: 0 0 35px 2px rgba(0, 0, 0, 0.15) inset; -moz-box-shadow: 0 0 35px 2px rgba(0, 0, 0, 0.15) inset;
+}
+.honor-channel-floor .goods-list .grid-items .thumb::after {
+	background: rgb(245, 246, 248); left: 0px; top: 0px; width: 100%; height: 186px; position: absolute; z-index: -1; content: "";
+}
+.honor-channel-floor .goods-list .grid-items .thumb::before {
+	left: 0px; top: 186px; width: 0px; height: 0px; border-right-color: rgb(245, 246, 248); border-bottom-color: transparent; border-left-color: transparent; border-right-width: 280px; border-bottom-width: 50px; border-left-width: 10px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; position: absolute; z-index: -1; content: "";
+}
+.honor-channel-floor .goods-list .grid-items .grid-img {
+	margin: 36px auto 0px; width: 200px; height: 200px;
+}
+.honor-channel-floor .goods-list .grid-items .grid-title {
+	height: 44px; padding-top: 10px; padding-bottom: 2px; font-size: 18px;
+}
+.honor-channel-floor .goods-list .grid-items .grid-desc {
+	margin: 0px; line-height: 28px; font-size: 14px;
+}
+.honor-channel-floor .goods-list .grid-items .grid-price {
+	margin: 0px; color: rgb(0, 181, 226); line-height: 34px;
+}
+.honor-channel-floor .goods-list .grid-items .grid-tips {
+	top: 196px; right: 37px;
+}
+.honor-channel-floor .goods-list .grid-items-honor-ad {
+	width: 33.33%; height: 198px;
+}
+.honor-channel-floor .goods-list .grid-items-honor-ad.current .thumb {
+	box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none;
+}
+.honor-channel-floor .goods-list .grid-items-honor-ad .thumb::after {
+	display: none;
+}
+.honor-channel-floor .goods-list .grid-items-honor-ad .thumb::before {
+	display: none;
+}
+.honor-channel-floor .goods-list .grid-items-honor-ad .grid-img {
+	margin: 0px; width: 100%; height: 100%;
+}
+.channel-floor-honor {
+	background: none; overflow: hidden;
+}
+.channel-floor-honor .honor-triangle-blue-01 {
+	left: 50%; width: 0px; height: 0px; bottom: 60px; margin-left: -965px; border-bottom-color: rgb(234, 234, 234); border-left-color: transparent; border-bottom-width: 170px; border-left-width: 1920px; border-bottom-style: solid; border-left-style: solid; position: absolute; z-index: -1;
+}
+.channel-floor-honor .honor-triangle-blue-01::after {
+	background: rgb(234, 234, 234); left: 0px; top: 170px; width: 1920px; height: 62px; margin-left: -1920px; position: absolute; content: "";
+}
+.honor-channel-container {
+	background: none;
+}
+.honor-channel-container .honor-triangle-blue-02 {
+	left: 50%; width: 1920px; margin-left: -965px; position: absolute; z-index: -1;
+}
+.honor-channel-container .honor-triangle-blue-03 {
+	left: 50%; width: 1920px; margin-left: -965px; position: absolute; z-index: -1;
+}
+.honor-channel-container .honor-triangle-blue-04 {
+	left: 50%; width: 1920px; margin-left: -965px; position: absolute; z-index: -1;
+}
+.honor-channel-container .honor-triangle-blue-05 {
+	left: 50%; width: 1920px; margin-left: -965px; position: absolute; z-index: -1;
+}
+.honor-channel-container .honor-triangle-blue-06 {
+	left: 50%; width: 1920px; margin-left: -965px; position: absolute; z-index: -1;
+}
+.honor-channel-container .honor-triangle-blue-07 {
+	left: 50%; width: 1920px; margin-left: -965px; position: absolute; z-index: -1;
+}
+.honor-channel-container .honor-triangle-blue-02::after {
+	left: 0px; width: 0px; height: 0px; position: absolute; content: "";
+}
+.honor-channel-container .honor-triangle-blue-03::before {
+	left: 0px; width: 0px; height: 0px; position: absolute; content: "";
+}
+.honor-channel-container .honor-triangle-blue-03::after {
+	left: 0px; width: 0px; height: 0px; position: absolute; content: "";
+}
+.honor-channel-container .honor-triangle-blue-04::before {
+	left: 0px; width: 0px; height: 0px; position: absolute; content: "";
+}
+.honor-channel-container .honor-triangle-blue-04::after {
+	left: 0px; width: 0px; height: 0px; position: absolute; content: "";
+}
+.honor-channel-container .honor-triangle-blue-05::before {
+	left: 0px; width: 0px; height: 0px; position: absolute; content: "";
+}
+.honor-channel-container .honor-triangle-blue-05::after {
+	left: 0px; width: 0px; height: 0px; position: absolute; content: "";
+}
+.honor-channel-container .honor-triangle-blue-06::before {
+	left: 0px; width: 0px; height: 0px; position: absolute; content: "";
+}
+.honor-channel-container .honor-triangle-blue-06::after {
+	left: 0px; width: 0px; height: 0px; position: absolute; content: "";
+}
+.honor-channel-container .honor-triangle-blue-07::before {
+	left: 0px; width: 0px; height: 0px; position: absolute; content: "";
+}
+.honor-channel-container .honor-triangle-blue-02 {
+	background: rgb(234, 234, 234); top: 0px; height: 534px;
+}
+.honor-channel-container .honor-triangle-blue-02::after {
+	top: 534px; border-top-color: rgb(234, 234, 234); border-right-color: transparent; border-top-width: 88px; border-right-width: 1920px; border-top-style: solid; border-right-style: solid;
+}
+.honor-channel-container .honor-triangle-blue-03 {
+	background: rgb(157, 224, 241); top: 620px; height: 564px;
+}
+.honor-channel-container .honor-triangle-blue-03::before {
+	top: -86px; border-bottom-color: rgb(157, 224, 241); border-left-color: transparent; border-bottom-width: 88px; border-left-width: 1920px; border-bottom-style: solid; border-left-style: solid;
+}
+.honor-channel-container .honor-triangle-blue-03::after {
+	top: 564px; border-top-color: rgb(157, 224, 241); border-left-color: transparent; border-top-width: 88px; border-left-width: 1920px; border-top-style: solid; border-left-style: solid;
+}
+.honor-channel-container .honor-triangle-blue-04 {
+	background: rgb(234, 234, 234); top: 1271px; height: 534px;
+}
+.honor-channel-container .honor-triangle-blue-04::before {
+	top: -87px; border-right-color: transparent; border-bottom-color: rgb(234, 234, 234); border-right-width: 1920px; border-bottom-width: 88px; border-right-style: solid; border-bottom-style: solid;
+}
+.honor-channel-container .honor-triangle-blue-04::after {
+	top: 534px; border-top-color: rgb(234, 234, 234); border-right-color: transparent; border-top-width: 120px; border-right-width: 1920px; border-top-style: solid; border-right-style: solid;
+}
+.honor-channel-container .honor-triangle-blue-05 {
+	background: rgb(246, 246, 246); top: 1924px; height: 674px;
+}
+.honor-channel-container .honor-triangle-blue-05::before {
+	top: -118px; border-bottom-color: rgb(246, 246, 246); border-left-color: transparent; border-bottom-width: 120px; border-left-width: 1920px; border-bottom-style: solid; border-left-style: solid;
+}
+.honor-channel-container .honor-triangle-blue-05::after {
+	top: 674px; border-top-color: rgb(246, 246, 246); border-left-color: transparent; border-top-width: 120px; border-left-width: 1920px; border-top-style: solid; border-left-style: solid;
+}
+.honor-channel-container .honor-triangle-blue-06 {
+	background: rgb(157, 224, 241); top: 2716px; height: 90px;
+}
+.honor-channel-container .honor-triangle-blue-06::before {
+	top: -118px; border-right-color: transparent; border-bottom-color: rgb(157, 224, 241); border-right-width: 1920px; border-bottom-width: 120px; border-right-style: solid; border-bottom-style: solid;
+}
+.honor-channel-container .honor-triangle-blue-06::after {
+	top: 90px; border-top-color: rgb(157, 224, 241); border-right-color: transparent; border-top-width: 50px; border-right-width: 1920px; border-top-style: solid; border-right-style: solid;
+}
+.honor-channel-container .honor-triangle-blue-07 {
+	background: rgb(234, 234, 234); top: 2854px; height: 700px;
+}
+.honor-channel-container .honor-triangle-blue-07::before {
+	top: -48px; border-bottom-color: rgb(234, 234, 234); border-left-color: transparent; border-bottom-width: 50px; border-left-width: 1920px; border-bottom-style: solid; border-left-style: solid;
+}
+.honor-storey-channel-floor .goods-list .grid-items {
+	margin: 0px 0px 20px 20px; overflow: hidden;
+}
+.honor-storey-channel-floor .goods-list .grid-promo-list {
+	margin: 0px 0px -20px -20px;
+}
+.honor-storey-channel-floor .goods-list .grid-list {
+	border: 0px currentColor; border-image: none;
+}
+.honor-storey-channel-floor .goods-list .grid-items-honor-01 .thumb::before {
+	border: 0px currentColor !important; transition:0.2s; border-image: none !important; top: 0px; width: 100%; height: 100%; z-index: 1; -webkit-transition: all .2s ease; -moz-transition: all .2s ease; -o-transition: all .2s ease;
+}
+.honor-storey-channel-floor .goods-list .grid-promo-list .grid-items .thumb::before {
+	border: 0px currentColor !important; transition:0.2s; border-image: none !important; top: 0px; width: 100%; height: 100%; z-index: 1; -webkit-transition: all .2s ease; -moz-transition: all .2s ease; -o-transition: all .2s ease;
+}
+.honor-storey-channel-floor .goods-list .grid-promo-list .grid-items .thumb::after {
+	display: none;
+}
+.honor-storey-channel-floor .goods-list .grid-items-honor-01.current .thumb::before {
+	box-shadow: inset 0px 0px 35px 2px rgba(44,0,0,0.15); -webkit-box-shadow: 0 0 35px 2px rgba(0, 0, 0, 0.15) inset; -moz-box-shadow: 0 0 35px 2px rgba(0, 0, 0, 0.15) inset;
+}
+.honor-storey-channel-floor .goods-list .grid-promo-list .grid-items.current .thumb::before {
+	box-shadow: inset 0px 0px 35px 2px rgba(44,0,0,0.15); -webkit-box-shadow: 0 0 35px 2px rgba(0, 0, 0, 0.15) inset; -moz-box-shadow: 0 0 35px 2px rgba(0, 0, 0, 0.15) inset;
+}
+.honor-storey-channel-floor .goods-list .grid-items::after {
+	display: none;
+}
+.honor-storey-channel-floor .goods-list .grid-items-honor-01 {
+	height: 275px;
+}
+.honor-storey-channel-floor .goods-list .grid-items-honor-01 .thumb::after {
+	display: none;
+}
+.honor-storey-channel-floor .goods-list .grid-items-honor-01 .grid-img {
+	margin: 0px; width: 100%; height: 100%;
+}
+.honor-storey-channel-floor .goods-list .grid-items-honor-01 .grid-info {
+	left: 20px; top: 28px; text-align: left; position: absolute;
+}
+.honor-storey-channel-floor .goods-list .grid-items-honor-01 .grid-tips {
+	top: auto; right: 20px; bottom: 20px;
+}
+.honor-storey-channel-floor .goods-list .grid-items-honor-01 .grid-info .grid-title {
+	margin: 0px; padding: 0px 0px 2px; width: 180px; height: auto; line-height: 22px; display: block; max-height: 44px;
+}
+.honor-storey-channel-floor .goods-list .grid-items-honor-02 {
+	border: 1px solid rgb(229, 229, 229); border-image: none; height: 235px; box-sizing: border-box;
+}
+.honor-storey-channel-floor .goods-list .grid-items-honor-02 .thumb::before {
+	left: auto; top: auto; width: 0px; height: 0px; right: 182px; bottom: 0px; border-right-color: currentColor; border-bottom-color: rgb(245, 246, 248); border-left-color: transparent; border-right-width: 0px; border-bottom-width: 275px; border-left-width: 72px; border-right-style: none; border-bottom-style: solid; border-left-style: solid;
+}
+.honor-storey-channel-floor .goods-list .grid-items-honor-02 .thumb::after {
+	left: auto; width: 182px; height: 100%; right: 0px;
+}
+.honor-storey-channel-floor .goods-list .grid-items-honor-02 .grid-img {
+	margin: 40px 0px 0px 20px; width: 150px; height: 150px;
+}
+.honor-storey-channel-floor .goods-list .grid-items-honor-02 .grid-info {
+	left: 190px; top: 56px; text-align: left; position: absolute;
+}
+.honor-storey-channel-floor .goods-list .grid-items-honor-02 .grid-tips {
+	left: 130px; top: auto; right: auto; bottom: 35px;
+}
+.honor-storey-channel-floor .goods-list .grid-items-honor-02 .grid-info .grid-title {
+	padding: 0px 20px 2px 0px; width: 184px;
+}
+.honor-storey-channel-floor .goods-list .grid-items-honor-03 {
+	height: 294px;
+}
+.honor-storey-channel-floor .goods-list .grid-items-honor-03 .thumb::before {
+	display: none;
+}
+.honor-storey-channel-floor .goods-list .grid-items-honor-03 .thumb::after {
+	display: none;
+}
+.honor-storey-channel-floor .goods-list .grid-items-honor-03.current .thumb {
+	box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none;
+}
+.honor-storey-channel-floor .goods-list .grid-items-honor-03 .grid-img {
+	margin: 0px; width: 100%; height: 100%;
+}
+.honor-storey-channel-floor .goods-list .grid-items-honor-03 .grid-info {
+	background: rgba(0, 0, 0, 0.25); transition:0.2s; left: 0px; width: 100%; height: 78px; text-align: left; bottom: 0px; padding-left: 20px; position: absolute; -webkit-transition: all .2s ease; -moz-transition: all .2s ease; -o-transition: all .2s ease;
+}
+.honor-storey-channel-floor .goods-list .grid-items-honor-03 .grid-tips {
+	top: 160px; right: 20px;
+}
+.honor-storey-channel-floor .goods-list .grid-items-honor-03.current .grid-info {
+	background: rgba(0, 181, 226, 0.8);
+}
+.honor-storey-channel-floor .goods-list .grid-items-honor-03 .grid-info .grid-title {
+	margin: 10px 0px 0px; padding: 0px; height: 28px; color: rgb(255, 255, 255); line-height: 28px; display: block;
+}
+.honor-storey-channel-floor .goods-list .grid-items-honor-03 .grid-info .grid-price {
+	margin: 0px; padding: 0px; height: 26px; color: rgb(255, 255, 255); line-height: 26px; font-size: 18px; display: block;
+}
+.honor-storey-channel-floor .goods-list .grid-items-honor-03 .grid-info .grid-price span {
+	color: rgb(255, 255, 255);
+}
+.honor-storey-channel-floor .goods-list .grid-items-honor-04 {
+	border: 1px solid rgb(229, 229, 229); border-image: none; height: 292px; box-sizing: border-box;
+}
+.honor-storey-channel-floor .goods-list .grid-items-honor-04 .thumb::before {
+	top: 140px; border-right-color: rgb(245, 246, 248); border-bottom-color: transparent; border-right-width: 266px; border-bottom-width: 20px; border-right-style: solid; border-bottom-style: solid;
+}
+.honor-storey-channel-floor .goods-list .grid-items-honor-04 .thumb::after {
+	height: 140px;
+}
+.honor-storey-channel-floor .goods-list .grid-items-honor-04 .grid-img {
+	margin: 20px auto 0px; width: 150px; height: 150px;
+}
+.honor-storey-channel-floor .goods-list .grid-items-honor-04 .grid-title {
+	width: 226px; padding-top: 8px;
+}
+.honor-storey-channel-floor .goods-list .grid-items-honor-04 .grid-desc {
+	line-height: 38px;
+}
+.honor-storey-channel-floor .goods-list .grid-items-honor-04 .grid-price {
+	line-height: 14px;
+}
+.honor-storey-channel-floor .goods-list .grid-items-honor-04 .grid-tips {
+	top: 130px; right: 49px;
+}
+.grid-items-honor-lg {
+	width: 300px !important; height: 606px !important;
+}
+.grid-items-honor-md {
+	width: 370px !important; height: 570px !important;
+}
+.grid-items-honor-sm {
+	width: 370px !important; height: 490px !important;
+}
+.grid-items-honor-lg .thumb {
+	width: 100%; height: 100%; display: inline-block;
+}
+.grid-items-honor-sm .thumb {
+	width: 100%; height: 100%; display: inline-block;
+}
+.grid-items-honor-md .thumb {
+	width: 100%; height: 100%; display: inline-block;
+}
+.grid-items-honor-lg img {
+	width: 100%; height: 100%;
+}
+.grid-items-honor-md img {
+	width: 100%; height: 100%;
+}
+.grid-items-honor-sm img {
+	width: 100%; height: 100%;
+}
+.honor {
+	background: rgb(252, 252, 252);
+}
+.honor .grid-items .grid-price {
+	color: rgb(0, 181, 226);
+}
+.honor .event-float .hover-list li:hover a {
+	color: rgb(0, 181, 226);
+}
+.honor .event-float .hover-list li.hover a {
+	color: rgb(0, 181, 226);
+}
+.honor .event-float .hover-list li::before {
+	background: rgb(0, 181, 226);
+}
+.honor .event-float .hover-list li::before {
+	background: rgb(0, 181, 226);
+}
+.honor .ec-slider-nav-1 {
+	bottom: 16px;
+}
+.honor .ec-slider-nav-1 span {
+	background: rgb(255, 255, 255); border-radius: 0px; border: 0px currentColor; border-image: none; width: 25px; height: 4px; margin-left: 8px; opacity: 0.2;
+}
+.honor .minicart .h span {
+	background: rgb(0, 181, 226);
+}
+.honor .ec-slider-nav-1 .current {
+	background: rgb(0, 181, 226);
+}
+.honor .channel-list .pro-list .p-button .p-button-cart {
+	color: rgb(255, 255, 255);
+}
+.honor .channel-list .pro-list .p-button .p-button-an {
+	color: rgb(255, 255, 255);
+}
+.honor .channel-list .pro-list .p-price {
+	color: rgb(255, 255, 255);
+}
+.honor .channel-list .pro-list .p-name a:hover {
+	color: rgb(255, 255, 255);
+}
+.honor .pro-cate-area .p-default .selected a {
+	color: rgb(255, 255, 255);
+}
+.honor .pro-cate-area .p-expand .selected a {
+	color: rgb(255, 255, 255);
+}
+.honor .channel-list .pro-list .p-button a:hover {
+	color: rgb(255, 255, 255);
+}
+.honor .shortcut a:hover {
+	color: rgb(0, 181, 226);
+}
+.honor .shortcut .s-dropdown:hover a:hover {
+	color: rgb(0, 181, 226);
+}
+.honor .searchBar-key a:hover {
+	color: rgb(0, 181, 226);
+}
+.pro-cate-sort .sort-asc .sort-eval s {
+	background-position: 0px -47px;
+}
+.honor .pro-cate-sort .sort-desc .sort-eval s {
+	background-position: 0px -152px;
+}
+.pro-cate-sort .sort-sale s {
+	background-position: 0px -70px;
+}
+.pro-cate-sort .sort-price s {
+	background-position: 0px -70px;
+}
+.pro-cate-sort .sort-added s {
+	background-position: 0px -70px;
+}
+.honor .pro-cate-sort .sort-asc .sort-sale s {
+	background-position: 0px -170px;
+}
+.honor .pro-cate-sort .sort-asc .sort-price s {
+	background-position: 0px -170px;
+}
+.honor .pro-cate-sort .sort-asc .sort-added s {
+	background-position: 0px -170px;
+}
+.honor .pro-cate-sort .sort-desc .sort-sale s {
+	background-position: 0px -190px;
+}
+.honor .pro-cate-sort .sort-desc .sort-price s {
+	background-position: 0px -190px;
+}
+.honor .pro-cate-sort .sort-desc .sort-added s {
+	background-position: 0px -190px;
+}
+.honor .channel-list .pro-list .p-button .p-button-cart-disabled {
+	border-color: rgb(48, 192, 229);
+}
+.honor .channel-list .pro-list .p-button .p-button-an-disabled {
+	border-color: rgb(48, 192, 229);
+}
+.honor .channel-list .pro-list .p-button a:hover {
+	border-color: rgb(48, 192, 229);
+}
+.honor .channel-list .pro-list .pro-panels:hover {
+	border-color: rgb(48, 192, 229);
+}
+.honor .channel-list .pro-list .hover {
+	border-color: rgb(48, 192, 229);
+}
+.honor .category-arrondi {
+	border-color: rgb(48, 192, 229);
+}
+.huawei-channel-container {
+	background: rgb(255, 255, 255);
+}
+.huwei .home-channel-container {
+	background: 0px;
+}
+.huwei .home-channel-container .huawei-channel-floor .h {
+	margin: 0px 0px 12px;
+}
+.huawei-channel-floor .h {
+	margin: 0px 0px 16px;
+}
+.huawei-channel-floor .channel-title {
+	text-align: center; color: rgb(0, 0, 0); line-height: 50px; font-size: 30px;
+}
+.huawei-channel-floor .channel-title a:hover {
+	color: rgb(153, 0, 0);
+}
+.huawei-channel-floor .channel-title::before {
+	background: rgb(153, 0, 0); margin: 0px auto; width: 24px; height: 4px; display: block; content: "";
+}
+.huawei-channel-floor .channel-nav {
+	text-align: center; margin-left: 0px;
+}
+.huawei-channel-floor .channel-nav li {
+	line-height: 34px; float: none; display: inline-block;
+}
+.huawei-channel-floor .channel-nav a {
+	color: rgb(113, 113, 113); font-size: 14px;
+}
+.huawei-channel-floor .channel-nav a:hover {
+	color: rgb(153, 0, 0);
+}
+.huawei-channel-floor .channel-nav a::after {
+	display: none;
+}
+.huawei-channel-floor .channel-more {
+	left: auto; top: auto; right: 0px; bottom: 2px; line-height: 27px; position: absolute;
+}
+.huawei-channel-floor .channel-more a {
+	padding: 0px 10px 0px 14px; border: 1px solid rgb(178, 178, 178); border-image: none; width: 42px; height: 27px; text-align: right; color: rgb(58, 58, 58); font-size: 12px; display: block;
+}
+.huawei-channel-floor .channel-more a:hover {
+	border: 1px solid rgb(153, 0, 0); border-image: none; color: rgb(153, 0, 0);
+}
+.huawei-channel-floor .channel-more a::after {
+	width: 0px; height: 0px; margin-left: 10px; border-top-color: transparent; border-bottom-color: transparent; border-left-color: rgb(178, 178, 178); border-top-width: 4px; border-bottom-width: 4px; border-left-width: 6px; border-top-style: solid; border-bottom-style: solid; border-left-style: solid; display: inline-block; content: "";
+}
+.huawei-channel-floor .channel-more a:hover::after {
+	border-left-color: rgb(153, 0, 0); border-left-width: 6px; border-left-style: solid;
+}
+.huawei-channel-floor .grid-list {
+	margin-top: 0px; margin-left: 0px;
+}
+.huawei-channel-floor .grid-items {
+	transition:none; width: auto; height: auto; margin-top: 0px; margin-bottom: 0px; margin-left: 0px; -webkit-transition: none; -moz-transition: none; -o-transition: none;
+}
+.huawei-channel-floor .grid-items .grid-img {
+	margin: 0px; width: auto; height: auto;
+}
+.huawei-channel-floor .grid-items .grid-title {
+	margin: 0px; padding: 0px; width: 100%; height: auto; display: block;
+}
+.huawei-channel-floor .grid-items .grid-desc {
+	margin: 0px;
+}
+.huawei-channel-floor .grid-items .grid-price {
+	margin: 0px;
+}
+.huawei-channel-floor .grid-items.current {
+	box-shadow: none; transform: none; -webkit-transform: none; -o-transform: none; -webkit-box-shadow: none; -moz-box-shadow: none; -moz-transform: none;
+}
+.huawei-channel-floor .grid-info {
+	width: 100%;
+}
+.huawei-channel-floor .grid-info .grid-tips {
+	left: auto; top: auto; right: 20px; bottom: 20px; position: absolute !important;
+}
+.huawei-channel-floor .grid-items-ad {
+	width: 301px; height: 280px; margin-bottom: 20px; margin-left: -1px; position: relative; z-index: 5;
+}
+.huawei-channel-floor .grid-items-ad a {
+	border: 1px solid rgb(234, 234, 234); border-image: none; width: 299px; height: 278px;
+}
+.huawei-channel-floor .grid-items-ad img {
+	width: 100%; height: 100%; display: block;
+}
+.huawei-channel-floor :first-child.grid-items-ad {
+	width: 300px; margin-left: 0px;
+}
+.huawei-channel-floor .grid-items-ad::before {
+	background: rgb(153, 0, 0); transition:width 0.2s ease-out; left: 0px; top: 0px; width: 0px; height: 4px; right: auto; bottom: auto; display: block; position: absolute; z-index: 10; content: ""; -webkit-transition: width .2s ease-out 0s; -moz-transition: width .2s ease-out 0s; -o-transition: width .2s ease-out 0s;
+}
+.huawei-channel-floor .grid-items-ad.current::before {
+	width: 100%; padding-left: 2px;
+}
+.huawei-channel-floor .grid-items-ad-400 {
+	width: 400px; height: 746px; margin-bottom: 0px; margin-left: 0px; z-index: 10;
+}
+.huawei-channel-floor .grid-items-ad-400 a {
+	border: 0px currentColor; border-image: none; width: 100%; height: 100%;
+}
+.huawei-channel-floor .grid-items-ad-400 img {
+	width: 100%; height: 100%;
+}
+.huawei-channel-floor :first-child.grid-items-ad-400 {
+	width: 400px; margin-left: 0px;
+}
+.huawei-channel-floor .grid-items-ad-400::before {
+	padding: 0px; left: auto; top: 0px; right: auto; bottom: auto; position: absolute;
+}
+.huawei-channel-floor .grid-items-ad-400.current::before {
+	padding: 0px;
+}
+.huawei-channel-floor .grid-items-ad-291 {
+	width: 291px; height: 592px;
+}
+.huawei-channel-floor .grid-items-ad-291 img {
+	width: 100%; height: 100%;
+}
+.huawei-channel-floor .goods-list-first .b {
+	margin-top: -1px; position: relative;
+}
+.huawei-channel-floor .grid-items-first {
+	width: 401px; height: 372px; margin-left: -1px; float: left; position: relative; z-index: 5;
+}
+.huawei-channel-floor .grid-items-first a {
+	border-width: 0px 1px 1px; border-style: none solid solid; border-color: currentColor rgb(234, 234, 234) rgb(234, 234, 234); border-image: none; width: 399px; height: 371px;
+}
+.huawei-channel-floor .grid-items-first .grid-img {
+	margin: 39px auto 0px; width: 200px; height: 200px;
+}
+.huawei-channel-floor .grid-items-first .grid-img img {
+	width: 100%; height: 100%;
+}
+.huawei-channel-floor .grid-items-first .grid-title {
+	margin: 0px auto; padding: 14px 30px 2px; width: 340px; height: 40px; color: rgb(58, 58, 58); line-height: 20px; font-size: 18px; vertical-align: bottom; display: table-cell;
+}
+.huawei-channel-floor .grid-items-first .grid-desc {
+	color: rgb(164, 164, 164); line-height: 22px; font-size: 14px;
+}
+.huawei-channel-floor .grid-items-first .grid-price {
+	color: rgb(153, 0, 0); line-height: 28px; padding-top: 8px; font-size: 14px;
+}
+.huawei-channel-floor .grid-items-first .grid-price::before {
+	background: rgb(153, 0, 0); margin: 0px auto; width: 24px; height: 2px; display: block; content: "";
+}
+.huawei-channel-floor .grid-items-first .grid-tips {
+	top: 200px; right: 93px;
+}
+.huawei-channel-floor :first-child.grid-items-first {
+	width: 400px; height: 372px; margin-left: 0px;
+}
+.huawei-channel-floor :first-child.grid-items-first a {
+	width: 399px; height: 371px; border-left-color: currentColor; border-left-width: medium; border-left-style: none;
+}
+.huawei-channel-floor .grid-items-first::before {
+	background: rgb(153, 0, 0); transition:width 0.2s ease-out; left: 0px; top: 0px; width: 0px; height: 4px; right: auto; bottom: auto; display: block; position: absolute; z-index: 10; content: ""; -webkit-transition: width .2s ease-out 0s; -moz-transition: width .2s ease-out 0s; -o-transition: width .2s ease-out 0s;
+}
+.huawei-channel-floor .grid-items-first.current::before {
+	width: 100%;
+}
+.huawei-channel-floor .grid-list-second {
+	margin-left: -21px;
+}
+.huawei-channel-floor .grid-items-second {
+	width: 386px; height: 190px; margin-left: 21px;
+}
+.huawei-channel-floor .grid-items-second .thumb {
+	width: 100%; height: 100%; display: block; position: relative;
+}
+.huawei-channel-floor .grid-items-second .grid-img {
+	left: auto; top: auto; width: 100%; height: 100%; right: auto; bottom: auto; position: absolute;
+}
+.huawei-channel-floor .grid-items-second .grid-img img {
+	width: 100%; height: 100%;
+}
+.huawei-channel-floor .grid-items-second .grid-info {
+	background: rgba(0, 0, 0, 0.4); padding: 30px 10px 0px 16px; left: auto; top: 0px; width: 164px; height: 160px; text-align: left; right: 0px; bottom: auto; display: block; position: absolute; z-index: 10;
+}
+.huawei-channel-floor .grid-items-second .grid-info * {
+	color: rgb(255, 255, 255); position: relative;
+}
+.huawei-channel-floor .grid-items-second .grid-title {
+	line-height: 20px; padding-bottom: 2px; font-size: 18px; max-height: 40px;
+}
+.huawei-channel-floor .grid-items-second .grid-desc {
+	line-height: 28px;
+}
+.huawei-channel-floor .grid-items-second .grid-price {
+	color: rgb(255, 254, 254); line-height: 32px; padding-top: 2px; font-size: 14px; margin-top: 16px;
+}
+.huawei-channel-floor .grid-items-second .grid-price::before {
+	background: rgb(255, 255, 255); width: 24px; height: 2px; display: block; content: "";
+}
+.huawei-channel-floor .grid-items-second.current .grid-info {
+	background: rgba(153, 0, 0, 0.8);
+}
+.huawei-channel-floor .grid-items-second-big {
+	width: 800px; height: 372px; margin-left: 0px; position: relative; z-index: 5;
+}
+.huawei-channel-floor .grid-items-second-big a.thumb {
+	border-width: 0px 0px 1px 1px; border-style: none none solid solid; border-color: currentColor currentColor rgb(234, 234, 234) rgb(234, 234, 234); border-image: none; width: 799px; height: 371px;
+}
+.huawei-channel-floor .grid-items-second-big .grid-info {
+	background: rgba(0, 0, 0, 0.4); padding: 74px 10px 0px 22px; left: auto; top: 0px; width: 368px; height: 298px; text-align: left; right: 0px; bottom: auto; display: block; position: absolute; z-index: 10;
+}
+.huawei-channel-floor .grid-items-second-big .grid-title {
+	line-height: 36px; font-size: 24px; max-height: 72px;
+}
+.huawei-channel-floor .grid-items-second-big .grid-desc {
+	line-height: 32px; font-size: 14px;
+}
+.huawei-channel-floor .grid-items-second-big .grid-price {
+	line-height: 56px; padding-top: 2px; font-size: 18px; margin-top: 18px;
+}
+.huawei-channel-floor .goods-list :first-child.b .grid-items-first {
+	width: 401px; height: 374px;
+}
+.huawei-channel-floor .goods-list :first-child.b .grid-items-first a {
+	width: 399px; height: 372px; border-top-color: rgb(234, 234, 234); border-top-width: 1px; border-top-style: solid;
+}
+.huawei-channel-floor .goods-list :first-child.b :first-child.grid-items-first {
+	width: 400px; height: 374px;
+}
+.huawei-channel-floor .goods-list :first-child.b :first-child.grid-items-first a {
+	width: 399px; height: 372px; border-left-color: currentColor; border-left-width: medium; border-left-style: none;
+}
+.huawei-channel-floor .goods-list :first-child.b .grid-items-second-big {
+	width: 800px; height: 372px; margin-left: 0px;
+}
+.huawei-channel-floor .goods-list :first-child.b .grid-items-second-big a.thumb {
+	border-width: 0px 1px 1px medium; border-style: none solid solid none; border-color: currentColor rgb(234, 234, 234) rgb(234, 234, 234) currentColor; border-image: none; width: 799px; height: 371px;
+}
+.huawei-channel-floor .goods-list :first-child.b .grid-items-second-big .grid-info {
+	left: auto; top: 0px; width: 368px; height: 298px; right: -1px; bottom: auto; position: absolute;
+}
+.huawei-channel-floor .grid-items-third {
+	width: 291px; height: 290px; margin-left: 12px;
+}
+.huawei-channel-floor .grid-items-third .grid-info {
+	left: 31px; top: 18px; width: auto; text-align: left; right: auto; bottom: auto; padding-right: 10px; position: absolute; z-index: 10;
+}
+.huawei-channel-floor .grid-items-third .grid-info-white * {
+	color: rgb(255, 255, 255) !important;
+}
+.huawei-channel-floor .grid-items-third .grid-img {
+	left: auto; top: auto; width: 100%; height: 100%; right: auto; bottom: auto; position: absolute;
+}
+.huawei-channel-floor .grid-items-third .grid-img img {
+	width: 100%; height: 100%;
+}
+.huawei-channel-floor .grid-items-third .grid-title {
+	color: rgb(0, 0, 0); line-height: 20px; padding-bottom: 2px; font-size: 18px;
+}
+.huawei-channel-floor .grid-items-third .grid-title::before {
+	background: rgb(153, 0, 0); width: 24px; height: 2px; margin-bottom: 17px; display: block; content: "";
+}
+.huawei-channel-floor .grid-items-third .grid-price {
+	color: rgb(153, 0, 0); line-height: 34px; font-size: 18px; margin-top: 10px;
+}
+.huawei-channel-floor .grid-items-third .grid-tips {
+	left: auto; top: auto; right: 20px; bottom: 20px; position: absolute;
+}
+.huawei-channel-floor .grid-items-third-594 {
+	width: 594px; margin-bottom: 12px;
+}
+.huawei-channel-floor .grid-items-third-594 + .grid-items-third {
+	margin-bottom: 12px;
+}
+.huawei-channel-floor .goods-rolling {
+	border: 1px solid rgb(234, 234, 234); border-image: none; width: 1198px; height: 254px;
+}
+.huawei-channel-floor .goods-rolling .grid-items {
+	width: 213px; height: 256px; border-left-color: rgb(234, 234, 234); border-left-width: 1px; border-left-style: solid;
+}
+.huawei-channel-floor .goods-rolling .grid-items::before {
+	background: rgb(153, 0, 0); transition:width 0.2s ease-out; left: -1px; top: 0px; width: 0px; height: 4px; right: auto; bottom: auto; display: block; position: absolute; z-index: 10; content: ""; -webkit-transition: width .2s ease-out 0s; -moz-transition: width .2s ease-out 0s; -o-transition: width .2s ease-out 0s;
+}
+.huawei-channel-floor .goods-rolling .grid-items.current::before {
+	width: 100%; padding-left: 2px;
+}
+.huawei-channel-floor .goods-rolling :first-child.grid-items {
+	border-left-color: transparent; border-left-width: 1px; border-left-style: solid;
+}
+.huawei-channel-floor .goods-rolling .grid-img {
+	margin: 22px auto 12px; width: 120px; height: 120px;
+}
+.huawei-channel-floor .goods-rolling .grid-img img {
+	width: 100%; height: 100%;
+}
+.huawei-channel-floor .goods-rolling .grid-title {
+	padding: 0px 20px 2px; width: 176px; height: 40px; color: rgb(58, 58, 58); line-height: 20px; font-size: 18px; vertical-align: bottom; display: table-cell;
+}
+.huawei-channel-floor .goods-rolling .grid-desc {
+	color: rgb(164, 164, 164); line-height: 26px; font-size: 12px;
+}
+.huawei-channel-floor .goods-rolling .grid-price {
+	color: rgb(153, 0, 0); line-height: 18px; font-size: 14px;
+}
+.huawei-channel-floor .goods-rolling .grid-tips {
+	top: 100px; right: 40px;
+}
+.huawei .category-arrondi {
+	border-color: rgb(170, 48, 48);
+}
+.huawei .category-arrondi span::before {
+	background: rgb(190, 120, 120);
+}
+.honor .naver a.current {
+	color: rgb(0, 181, 226);
+}
+.honor .naver a:hover {
+	color: rgb(0, 181, 226);
+}
+.honor .naver-sub .naver-sub-wrap .p-title .s1 a:hover {
+	color: rgb(0, 181, 226);
+}
+.honor .naver-sub .naver-sub-wrap .p-title .s2 a:hover {
+	color: rgb(0, 181, 226);
+}
+.honor .naver-sub .naver-sub-wrap .p-title .s3 a:hover {
+	color: rgb(0, 181, 226);
+}
+.honor .naver-sub .naver-sub-wrap .grid-items.current .grid-title {
+	color: rgb(0, 181, 226);
+}
+.honor .naver-sub .naver-sub-wrap .grid-price {
+	color: rgb(0, 181, 226);
+}
+.honor .shortcut .search-bar .search-bar-key a:hover {
+	color: rgb(0, 181, 226);
+}
+.honor .shortcut .dropdown-more a:hover {
+	color: rgb(0, 181, 226);
+}
+.honor .naver a.current::before {
+	background: rgb(0, 181, 226);
+}
+.honor .naver a:hover::before {
+	background: rgb(0, 181, 226);
+}
+.honor .shortcut .i-mall-uc span {
+	color: rgb(58, 58, 58);
+}
+.honor .shortcut .minicart-pro-empty a:hover {
+	border-color: rgb(0, 181, 226); color: rgb(0, 181, 226);
+}
+.honor .shortcut .s-dropdown .dropdown-i-mall a:hover {
+	color: rgb(202, 21, 29);
+}
+.honor .shortcut .s-dropdown .minicart-pro-list a:hover {
+	color: rgb(202, 21, 29);
+}
+.honor .shortcut .s-dropdown .minicart-pro-settleup span b {
+	color: rgb(202, 21, 29);
+}
+.honor .shortcut .s-dropdown .user-info-detail a:hover {
+	color: rgb(113, 113, 113);
+}
+.honor .shortcut .s-dropdown .minicart-pro-settleup a.button-minicart {
+	color: rgb(255, 255, 255);
+}

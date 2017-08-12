@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 声明命名空间 -->
+<mapper namespace="ShowProductDao">
+	
+	<!-- 实现getList方法,resultType返回类型,此处返回的是个集合，返回类型仍是（前15行） -->
+	<select id="getList" resultType="ShowProduct">
+		select code proCode,name
+		proName,img_path proImgPath,price proPrice,imgcode. evl evlCount from
+		product join
+		(SELECT product_code,COUNT(*) evl from evaluation GROUP BY product_code)
+		imgcode
+		on imgcode.product_code=product.`code` GROUP BY `name` limit 0, 15
+	</select>
+	
+	
+	
+	<!-- 实现getList方法,resultType返回类型,此处返回的是个集合，返回类型仍是（前15行） -->
+	<select id="getListSeries"  parameterType="String"  resultType="ShowProduct">
+		select code proCode,name
+		proName,img_path proImgPath,price proPrice,imgcode. evl evlCount from
+		product join
+		(SELECT product_code,COUNT(*) evl from evaluation GROUP BY product_code)
+		imgcode
+		on imgcode.product_code=product.`code` where series=#{ser} GROUP BY `name` limit 0, 15
+	</select>
+	
+	
+	<!-- 实现单价排序升序 -->
+	<select id="getListSort" resultType="ShowProduct">
+		select code proCode,name proName,img_path proImgPath,price
+		proPrice,imgcode.evl evlCount from product join
+		(SELECT product_code,COUNT(*) evl from evaluation GROUP BY product_code)
+		imgcode
+		on imgcode.product_code=product.`code` GROUP BY `name` ORDER BY proPrice
+		asc limit 0, 15
+	</select>
+
+	<!-- 实现单价排序降序 -->
+	<select id="getListSortDown" resultType="ShowProduct">
+		select code proCode,name proName,img_path proImgPath,price
+		proPrice,imgcode.evl evlCount from product join
+		(SELECT product_code,COUNT(*) evl from evaluation GROUP BY product_code)
+		imgcode
+		on imgcode.product_code=product.`code` GROUP BY `name` ORDER BY proPrice
+		DESC limit 0, 15
+	</select>
+
+	<!-- 得到单个对象 -->
+	<select id="getOne" parameterType="String" resultType="ShowProduct">
+		select
+		code proCode,name proName,img_path proImgPath,price proPrice,imgcode.
+		evl evlCount,product.describ descr from product join
+		(SELECT product_code,COUNT(*) evl from evaluation GROUP BY product_code)
+		imgcode
+		on imgcode.product_code=product.`code` GROUP BY `name` HAVING
+		proCode=#{name}
+	</select>
+
+	<!-- 属性值集合 -->
+	<select id="getValue" parameterType="String" resultType="PropertyValue">
+		SELECT * from property_value where product_name=#{name};
+	</select>
+
+	<!-- 添加到购物车 -->
+	<insert id="saveToShopCar" parameterType="ShopCar">
+		insert into shopping_car(user_id,product_code,num)
+		VALUES(#{userId},#{productCode},#{num})
+	</insert>
+
+	<!-- 修改购物车 -->
+	<update id="updateShopCar" parameterType="ShopCar">
+		UPDATE shopping_car set product_code=#{productcode},num=#{num}
+		where user_id=#{userid}
+	</update>
+
+    <!-- 找到图片路径 -->
+	<select id="findImgByNC" parameterType="PropertyValue"  resultType="String">
+		select img_path from product
+		where `code`=
+		(SELECT product_code from property_value where product_name=#{propertyName} and val=#{val} LIMIT 0,1)
+	</select>
+	
+	<!--  找到编号-->
+	<select id="findCode" parameterType="Desc"  resultType="String">
+		SELECT product_code from property_value where product_name=#{proName} GROUP BY product_code 
+		HAVING GROUP_CONCAT(`val`)=#{descContent};
+	</select>
+	
+	<!-- 找到单个商品 -->
+	<select id="findProOne" parameterType="ShowProduct"  resultType="Product">
+		select * from product where `code`=#{proCode} ;
+	</select>
+
+</mapper>

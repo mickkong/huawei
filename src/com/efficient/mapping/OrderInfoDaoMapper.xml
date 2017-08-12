@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="OrderInfoDao">
+	
+	<!-- 实现getOrder_info方法,resultType返回类型,此处返回的是个集合，返回类型仍是Order_info-->
+	<select id="getOrderList" resultType="OrderInfo">
+		select oi.* from order_info oi
+	</select>
+	
+	<!-- 获得订单表的部分数据 -->
+	<select id="getPartOrder" parameterType="int" resultType="OrderPartInfo">
+		select oi.order_no orderNo,oi.create_date createDate,oi.final_amt finalAmt,oi.state,oi.amt from order_info oi where oi.user_id=#{userId} order by createDate
+	</select>
+	
+	<!-- 根据状态获得部分数据 -->
+	<select id="getPartByState" parameterType="OrderPartInfo" resultType="OrderPartInfo">
+		 select oi.order_no orderNo,oi.create_date createDate,oi.final_amt finalAmt,oi.state,oi.amt from order_info oi where oi.state=#{state} and oi.user_id=#{userId} order by createDate
+	</select>
+	
+	<!-- 获得订单表的数据 -->
+	<select id="getOrderInfo" resultType="OrderAndProduct">
+		 select p.create_date,p.order_no,p.amt,p.final_amt,p.num,p.state,pv.name,pv.price,pv.stock from 
+		 ( select oi.create_date create_date,oi.order_no order_no,oi.amt amt,oi.final_amt final_amt,oi.state state,od.num num,od.product_code a from order_info oi,order_detail od where oi.order_no=od.order_no) p,
+		 product pv where p.a=pv.code
+	</select>
+	
+	<!-- 根据订单编号获得商品的code -->
+	<select id="getProCodeByOrderNo" parameterType="String" resultType="OrderDetail">
+		 select product_code from order_detail where order_no=#{order_no}
+	</select>
+	
+	<!-- 根据订单编号获得地址id -->
+	<select id="getAddrIdByOrderNo" parameterType="String" resultType="int">
+		 select rec_addr_id from order_info where order_no=#{order_no}
+	</select>
+	
+	<!-- 根据状态获得订单信息 -->
+	<select id="getOrderByState" parameterType="String" resultType="OrderAndProduct">
+		 select p.order_no,p.final_amt,p.num,p.state,pv.name,pv.price,pv.stock from 
+		 ( select oi.order_no,oi.final_amt final_amt,oi.state state,od.num num,od.product_code a from order_info oi,order_detail od where oi.order_no=od.order_no and oi.state=#{state}) p,
+		 product pv where p.a=pv.code
+	</select>
+	
+	<!-- 修改订单状态 ,支付时间，完成时间-->
+	<update id="update" parameterType="OrderInfo">
+		update order_info set state=#{state},pay_date=#{pay_date},finish_date=#{finish_date},final_amt=#{final_amt} where order_no=#{order_no}
+	</update>
+	
+	<!-- 修改订单状态 -->
+	<update id="updatestate" parameterType="OrderInfo">
+		update order_info set state=#{state} where order_no=#{order_no}
+	</update>
+	
+	<!-- 修改创建日期 -->
+	<update id="updateCreateDate" parameterType="OrderInfo">
+		update order_info set create_date=#{create_date} where order_no=#{order_no}
+	</update>
+	
+	<!-- 添加 -->
+	<insert id="insert" parameterType="OrderInfo">
+		insert into order_info(order_no,user_id,rec_addr_id,state,create_date,amt,final_amt,express_name,express_no) 
+		values(#{order_no},#{user_id},#{rec_addr_id},#{state},#{create_date},#{amt},#{final_amt},#{express_name},#{express_no})
+	</insert>
+</mapper>

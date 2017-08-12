@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ShoppingCarDao">
+	
+	<!-- 查找所有数据 -->
+	<select id="ListShoppingCar" parameterType="int" resultType="ShoppingCar">
+		select *
+		from shopping_car where user_id=#{0};
+	</select>
+	
+	<!-- 查找所有数据 -->
+	<select id="ListShoppingCarByState" parameterType="int" resultType="ShoppingCar">
+		select *
+		from shopping_car where user_id=#{0} and state=1;
+	</select>
+	
+	<!-- 获得总价钱 -->
+	<select id="sumPrice" parameterType="int" resultType="float">
+		select SUM(s.num*p.price) from shopping_car s,product p where s.product_code=p.code and s.user_id=#{0}
+	</select>
+	
+	<!-- 删除一条数据根据userid -->
+	<delete id="removeProduct" parameterType="int">
+		delete from shopping_car where user_id=#{0} 
+	</delete>
+	
+	<!-- 删除一条数据根据商品id -->
+	<delete id="removeProductBycode" parameterType="int">
+		delete from shopping_car where id=#{0} 
+	</delete>
+	
+	<!--根据code查询此商品是否在购物车  -->
+	<select id="selectByCode" parameterType="ShoppingCar" resultType="ShoppingCar">
+		select *
+			from shopping_car where product_code=#{product_code} and user_id=#{user_id}
+	</select>
+	
+	<!-- 添加 -->
+	<insert id="insert" parameterType="ShoppingCar">
+		insert into shopping_car(user_id,product_code,num) values(#{user_id},#{product_code},#{num})
+	</insert>
+	
+	<!-- 修改 -->
+	<update id="updateNum" parameterType="ShoppingCar">
+		update shopping_car set num=#{num} where id=#{id}
+	</update>
+	
+</mapper>

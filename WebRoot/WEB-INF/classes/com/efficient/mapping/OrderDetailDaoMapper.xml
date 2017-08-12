@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="OrderDetailDao">
+	
+	<!-- 根据订单编号查找订单信息 -->
+	<select id="getListByOrderNo"  parameterType="String" resultType="OrderDetail">
+		select * from Order_detail  where order_no=#{order_no}
+	</select>
+	
+	<!-- 获取订单明细表的内容 -->
+	<select id="getDetailList" resultType="OrderDetail">
+		select * from Order_detail
+	</select>
+	
+	<!-- 添加订单明细 -->
+	<insert id="addDetail" parameterType="OrderDetail">
+		insert into order_detail(order_no,product_code,num) values(#{order_no},#{product_code},#{num}) 
+	</insert>
+	
+</mapper>

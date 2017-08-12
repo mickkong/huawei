@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- 引用配置文件 -->
+	<properties resource="db.properties"></properties>
+	<!-- 设置别名 -->
+	<typeAliases>
+		<typeAlias alias="User" type="com.efficient.bean.User" />
+		<typeAlias alias="UserDao" type="com.efficient.dao.IUserDao" />
+		<typeAlias alias="OrderInfo" type="com.efficient.bean.OrderInfo" />
+		<typeAlias alias="OrderInfoDao" type="com.efficient.dao.IOrderInfoDao" />
+		<typeAlias alias="ShoppingCar" type="com.efficient.bean.ShoppingCar" />
+		<typeAlias alias="ShoppingCarDao" type="com.efficient.dao.IShoppingCarDao" />
+		<typeAlias alias="Product" type="com.efficient.bean.Product" />
+		<typeAlias alias="ProductDao" type="com.efficient.dao.IProductDao" />
+		<typeAlias alias="OrderDetail" type="com.efficient.bean.OrderDetail" />
+		<typeAlias alias="OrderDetailDao" type="com.efficient.dao.IOrderDetailDao" />
+
+		<typeAlias alias="ReceiveAddr" type="com.efficient.bean.ReceiveAddr" />
+		<typeAlias alias="ReceiveAddrDao" type="com.efficient.dao.IReceiveAddrDao" />
+
+		<typeAlias alias="ShopCar" type="com.efficient.bean.ShoppingCar" />
+		<typeAlias alias="PropertyValue" type="com.efficient.bean.PropertyValue" />
+		<typeAlias alias="ShowProduct" type="com.efficient.bean.ShowProOne" />
+		<typeAlias alias="ShowProductDao" type="com.efficient.dao.IShowProductDao" />
+
+		<typeAlias alias="Desc" type="com.efficient.bean.DescBean" />
+
+		<typeAlias alias="OrderAndProduct" type="com.efficient.bean.OrderAndProduct" />
+
+		<typeAlias alias="OrderPartInfo" type="com.efficient.bean.OrderPartInfo" />
+
+		<typeAlias alias="Evaluation" type="com.efficient.bean.Evaluation" />
+		<typeAlias alias="EvaluationDao" type="com.efficient.dao.IEvaluationDao" />
+		<typeAlias alias="ProductEva" type="com.efficient.bean.ProductEva" />
+
+	</typeAliases>
+	<!-- 配置环境变量 -->
+	<environments default="development">
+		<environment id="development">
+			<!-- 事务管理器 -->
+			<transactionManager type="JDBC"></transactionManager>
+			<!-- 数据源 -->
+			<dataSource type="POOLED">
+				<property name="driver" value="${driver}" />
+				<property name="url" value="${url}" />
+				<property name="username" value="${username}" />
+				<property name="password" value="${password}" />
+			</dataSource>
+		</environment>
+	</environments>
+
+	<!-- 注册Mapper.xml文件 -->
+	<mappers>
+		<mapper resource="com/efficient/mapping/ShowProductDaoMapper.xml" />
+		<mapper resource="com/efficient/mapping/UserDaoMapper.xml" />
+		<mapper resource="com/efficient/mapping/OrderInfoDaoMapper.xml" />
+		<mapper resource="com/efficient/mapping/OrderDetailDaoMapper.xml" />
+		<mapper resource="com/efficient/mapping/ReceiveAddrDaoMapper.xml" />
+		<mapper resource="com/efficient/mapping/ProductDaoMapper.xml" />
+		<mapper resource="com/efficient/mapping/ShoppingCarDaoMapper.xml" />
+
+		<mapper resource="com/efficient/mapping/EvaluationDaoMapper.xml" />
+	</mappers>
+</configuration>

@@ -1,0 +1,66 @@
+/*右边*/
+.progress-area {
+	padding-top: 6px;
+	margin-top: 2px;
+}
+.progress-area .progress1 {
+	background-position: 0 0;
+}
+.progress-area div {
+	width: 574px;
+	height: 34px;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	/*background: url(../images/SFRZ.png) scroll no-repeat;*/
+} 
+.hr-20 {
+	height: 20px;
+}
+.icon {
+	color: #ca151e;
+	vertical-align: middle;
+	margin-left: 4px;
+}
+.form-table table tr th {
+	text-align: right;
+	font-size: 14px;
+	font-weight: normal;
+	padding-right: 10px;
+}
+.form-table table tr th label {
+	font-weight: normal;
+}
+.form-table table tr td {
+	padding: 10px 0;
+	font-size: 14px;
+}
+.textInput {
+	height: 21px;
+	width: 340px;
+	border: 1px solid #dedede;
+	padding: 18px 12px;
+	line-height: 21px;
+}
+#Button {
+	width: 150px;
+	height: 40px;
+	text-align: center;
+    background-color: #ca151e;
+    border: 1px solid #ca151e;
+    color: #FFF!important;
+}
+#Button:hover {
+	background-color: #ab0009;
+    border: 1px solid #ab0009;
+}
+.agreeYHK {
+	padding-top: 35px;
+}
+#model img {
+	width: 150px;
+	height: 150px;
+}
+#false {
+	display: none;
+}

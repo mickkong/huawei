@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="UserDao">
+	
+	<!--获得所有的用户信息  -->
+	<select id="getUserList" resultType="User" >
+		select * from user
+	</select>
+	
+	<!--根据user_id查询余额 -->
+	<select id="getBalance" parameterType="int" resultType="float">
+		select balance from user where id=#{id}
+	</select>
+	
+	<!-- 通过ID查找用户信息 -->
+	<select id="getById" parameterType="int" resultType="User">
+		select *
+		from user where id=#{id}
+	</select>
+	
+	<!-- 通过名字查找用户信息 -->
+	<select id="getByName" parameterType="String" resultType="User">
+		select *
+		from user where name=#{name}
+	</select>
+	
+	<!-- 取得评价信息 -->
+	<select id="getEvaluation" parameterType="int" resultType="Evaluation">
+		select * from evaluation where user_id=#{0}
+	</select>
+	
+	<!-- 添加用户信息 -->
+	<insert id="register" parameterType="User">
+		insert into
+		user(name,pwd,phone)
+		values(#{name},#{pwd},#{phone})
+	</insert>
+	
+	
+	<update id="validateRealName" parameterType="User">
+		update user set
+		realname=#{realname},idcard=#{idcard},bankcard=#{bankcard}
+		where id=#{id}
+	</update>
+	
+	<update id="updatePointBan" parameterType="User">
+		update user set
+		point=#{point},balance=#{balance}
+		where id=#{id}
+	</update>
+	
+	<!-- 更新用户余额 -->
+	<update id="updateBalance" parameterType="User">
+		update user set
+		balance=#{balance}
+		where id=#{id}
+	</update>
+	
+	<!-- 更新用户电话 -->
+	<update id="updatePhone" parameterType="User">
+		update user set
+		phone=#{phone}
+		where id=#{id}
+	</update>
+	
+	<update id="updateEmail" parameterType="User">
+		update user set
+		email=#{email}
+		where id=#{id}
+	</update>
+	
+	<!-- 更新密码 -->
+	<update id="updatePwd" parameterType="User">
+		update user set pwd=#{pwd}
+		where id=#{id}
+	</update>
+	
+	<select id="login" parameterType="User" resultType="User">
+		select * from
+		user where name=#{name} and pwd=#{pwd}
+	</select>
+	
+	<select id="phoneLogin" parameterType="User" resultType="User">
+		select * from
+		user where phone=#{phone} and pwd=#{pwd}
+	</select>
+	
+	<select id="emailLogin" parameterType="User" resultType="User">
+		select * from
+		user where email=#{email} and pwd=#{pwd}
+	</select>
+</mapper>

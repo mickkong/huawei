@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 声明命名空间 -->
+<mapper namespace="ReceiveAddrDao">
+	
+	
+	<!-- 查找所有数据 -->
+	<select id="getReceiveAddrList" parameterType="int" resultType="ReceiveAddr">
+		select *
+		from receive_addr where user_id=#{0}
+	</select>
+	
+	<!-- 查找收货地址信息  -->
+	<select id="getAddr" parameterType="ReceiveAddr" resultType="String">
+		select addr
+		from receive_addr where user_id=#{user_id} and id=#{id}
+	</select>
+
+	<!-- 添加 -->
+	<insert id="addReceiveAddr" parameterType="ReceiveAddr" useGeneratedKeys="true" keyProperty="id">
+		insert into receive_addr(user_id,receiver,addr,zipCode,phone,mark) 
+		values(#{user_id},#{receiver},#{addr},#{zipcode},#{phone},#{mark})
+	</insert>
+	
+	<!-- 删除 -->
+	<delete id="removeReceiveAddr" parameterType="int">
+		delete from receive_addr where id=#{id}
+	</delete>
+	
+	<!-- 更新 -->
+	<update id="updateReceiveAddr" parameterType="ReceiveAddr">
+		update receive_addr set receiver=#{receiver},addr=#{addr},zipcode=#{zipcode},phone=#{phone},mark=#{mark} where id=#{id}
+	</update>
+	
+	<!-- 修改默认地址 -->
+	<update id="updateMark" parameterType="ReceiveAddr">
+		update receive_addr set mark=#{mark} where id=#{id}
+	</update>
+	
+	<!-- 修改地址为非默认地址 -->
+	<update id="updateNotMark" parameterType="int">
+		update receive_addr set mark=0 where id!=#{id}
+	</update>
+	
+	<!-- 根据id查询收货地址 -->
+	<select id="oneReceiveAddr" parameterType="int" resultType="ReceiveAddr">
+	select * from receive_addr where id=#{0}
+	</select>
+	
+</mapper>

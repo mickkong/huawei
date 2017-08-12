@@ -1,0 +1,213 @@
+*{
+	padding: 0;
+	margin:0;
+}
+body{
+	background-color:#f0f0f0;
+}
+.header{
+	width: 100%;
+	height: 67px;
+	background: #333;
+}
+.tubiao{
+	width: 988px;
+	height: 67px;
+	margin:0 auto;
+	text-align: left;
+	line-height: 67px;
+}
+.tubiao img{
+	margin-top:6px;
+	margin-left: 4px;
+	float: left;
+}
+.tubiao b{
+	font-size: 23px;
+    margin-top: -1px;
+    float: left;
+    margin-left: 5px;
+    color: white;
+}
+.denglu{
+	width: 988px;
+	height: 20px;
+	text-align: right;
+	margin:0 auto;
+	color: #333;
+	font-size: 12px;
+	padding-top: 40px;
+	padding-bottom: 3px;
+}
+.denglu a{
+	text-decoration: underline;
+	color: #d70506;
+}
+.zhuce{
+	width: 794px;
+	/*height:600px;*/
+	background: white;
+	margin:0 auto;
+	padding:52px 97px 60px 97px;
+}
+.zhuce_h3{
+	font-size: 28px;
+    color: #000;
+    font-weight: normal;
+}
+.node-intro{
+	color: #999;
+    line-height: 16px;
+    margin-top: 19px;
+    font-size: 12px;
+}
+.box-shadow-in{
+	width: 784px;
+	padding-bottom: 30px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: center;
+    float: left;
+}
+/*选择国家*/
+.node{
+	margin-top: 27px;
+}
+.node-title{
+	font-size: 14px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.foot-selectCountry-margin{
+	margin-top: -20px;
+	font-size: 13px;
+}
+.selectCountry-right{
+	float: right;
+}
+.node-intro {
+    color: #999;
+    line-height: 16px;
+    margin-top: 19px;
+}  
+ /*华为账号*/
+ .node_input{
+ 	margin: 30px 53px 0 0px;
+ 	text-align: left;
+ 	position: relative;
+ }
+ .node_input span{
+	margin-right:60px;
+	font-size: 12px;
+	color: #999;
+ }
+ .node_input input{
+ 	padding: 9px 10px;
+ 	width: 176px;
+ 	color: #999;
+ 	border-radius: 0px;
+ }
+ .node_btn{
+ 	width: 176px;
+    border-radius: 0px;
+    height: 37px;
+    line-height:20px;
+    font-size: 12px;
+  	margin-left: 5px;
+  	margin-top: 20px;
+  	position: absolute;
+  	top:-21px;
+  	left:303px;
+ }
+ .size{
+ 	font-size: 12px;
+ }
+ /*登录*/
+ .denglu_span{
+ 	margin-right: 50px!important;
+ }
+ .denglu_span1{
+ 	margin-right: 74px!important;
+ }
+ .length{
+ 	width: 360px !important;
+ }
+ /*条款*/
+ .regAgrTitleNew{
+ 	margin-bottom: 0px;
+    margin-top: 27px;
+    font-size: 16px;
+ }
+ .node-intro {
+    color: #999;
+    line-height: 16px;
+    margin-top: 19px;
+}
+.agrLineH {
+    line-height: 180%;
+    color: #000000;
+}
+.marginTop2 {
+    margin-top: 2px;
+}
+.marginTop8 {
+    margin-top: 8px;
+}
+.loginAndRegLink {
+    color: #00C0F4;
+    text-decoration: underline;
+}
+/*按钮*/
+.reg-btn {
+    margin-top: 38px;
+    text-align: center;
+    border-radius: 0px;
+}
+.reg-btn .btn.sel {
+    background-color: #d70506;
+    border: solid 1px #9c9c9c;
+    color: #fff;
+}
+.btn-reg {
+    width: 279px!important;
+    height: 45px;
+    margin: 0 auto;
+}
+.btn {
+    border-radius: 0px;
+    width: 142px;
+    color: #cccccc;
+}
+.box-shadow{
+	padding-bottom: 30px;
+    border-bottom: 1px solid #d7d7d7;
+    text-align: center;
+}
+/*底部*/
+.reg-content{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 988px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    padding-top: 40px;
+}
+.footer {
+    line-height: 24px;
+    color: #999;
+    font-size: 12px;
+}
+.rule {
+    padding: 0 10px;
+    text-decoration: none;
+    cursor:pointer;
+    color: #999;
+    font-size: 14px;
+}
+.foot_em {
+    font-size: 16px;
+}
+em {
+    font-weight: normal;
+    font-style: normal;
+}

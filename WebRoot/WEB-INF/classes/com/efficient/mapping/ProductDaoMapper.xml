@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ProductDao">
+	
+	<!-- 查找一条数据 -->
+	<select id="ListProduct" parameterType="String" resultType="Product">
+		select * 
+		from product where code=#{0}
+	</select>
+	
+	<!-- 查找所有数据 -->
+	<select id="getListProduct" parameterType="int" resultType="Product">
+		select p.* 
+		from product p,shopping_car s where s.product_code=p.code and s.user_id=#{0}
+	</select>
+	
+	<!-- 根据状态查找商品 -->
+	<select id="getProductBystate" parameterType="int" resultType="Product">
+		select p.* 
+		from product p,shopping_car s where s.product_code=p.code and s.state=1 and s.user_id=#{0}
+	</select>
+	
+	<!-- 根据商品code查找商品 -->
+	<select id="getProductByCode" parameterType="int" resultType="ProductEva">
+		select p.name,e.level,e.content 
+		from product p,evaluation e where e.product_code=p.code and e.user_id=#{0}
+	</select>
+	
+</mapper>
